@@ -4,7 +4,6 @@ title: From Sidewalk to Signal
 titleTemplate: '%s — PCW × Temple Libraries'
 layout: cover
 colorSchema: light
-routerMode: hash
 fonts:
   sans: Nunito Sans
   mono: Fira Code
