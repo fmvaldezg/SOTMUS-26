@@ -14,7 +14,7 @@ info: |
   State of the Map US 2026
 ---
 
-<video class="cover-bg" :src="$base + 'Untitled.mp4'" autoplay loop muted playsinline></video>
+<video class="cover-bg" :src="$base + 'cover-bg.mp4'" autoplay loop muted playsinline></video>
 <div class="cover-bg-overlay"></div>
 
 <img :src="$base + 'sotmus-2026-logo.png'" style="position: absolute; top: 1.5rem; right: 1.5rem; height: 7.5rem; z-index: 10;" alt="State of the Map US 2026" />
