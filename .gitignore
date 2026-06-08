@@ -1,0 +1,16 @@
+node_modules/
+dist/
+.DS_Store
+
+# Python / data scripts
+*.py
+data/
+__pycache__/
+
+# Generated outputs
+slides-export.pdf
+*.docx
+~$*
+
+# Misc
+libraries_logo.png

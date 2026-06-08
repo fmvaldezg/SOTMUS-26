@@ -1,0 +1,178 @@
+/* ── PCW brand design system ──────────────────────────────────────
+   Primary:    #5262ed  (PCW indigo-blue)
+   Dark bg:    #123248  (PCW dark teal-navy)
+   Lilac:      #d48aff  (PCW secondary accent)
+   Orange:     #ff8000  (PCW energy accent)
+   Salmon:     #ff665a  (PCW warm accent)
+   Light gray: #e6e6e6
+   ──────────────────────────────────────────────────────────────── */
+
+:root {
+  --pcw-primary:    #5262ed;
+  --pcw-dark:       #123248;
+  --pcw-lilac:      #d48aff;
+  --pcw-orange:     #ff8000;
+  --pcw-salmon:     #ff665a;
+  --pcw-light:      #f0eeff;
+  --pcw-light-lilac:#f7f0ff;
+  --slidev-theme-primary: var(--pcw-primary);
+}
+
+/* ── Typography ── */
+.slidev-layout {
+  font-family: 'Nunito Sans', 'Avenir Next', 'Helvetica Neue', sans-serif;
+}
+.slidev-layout h1 {
+  color: var(--pcw-dark);
+  font-weight: 800;
+  line-height: 1.1;
+  letter-spacing: -0.02em;
+}
+.slidev-layout h2 {
+  color: var(--pcw-dark);
+  font-weight: 700;
+}
+.slidev-layout strong {
+  color: var(--pcw-dark);
+}
+.slidev-layout p,
+.slidev-layout li {
+  color: #2a2a3a;
+}
+
+/* ── Cover slide ── */
+.cover-bg {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  /* Fallback gradient shown while video loads (or when using the div placeholder) */
+  background: linear-gradient(
+    145deg,
+    #123248 0%,
+    #1e3060 45%,
+    #5262ed 100%
+  );
+  /* Video element sizing */
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  /* Div placeholder label styling */
+  display: flex;
+  align-items: flex-end;
+  padding: 1rem 1.5rem;
+  font-size: 0.75rem;
+  color: rgba(255, 255, 255, 0.35);
+  font-style: italic;
+}
+
+/* Dark overlay so text stays readable over busy video footage */
+.cover-bg-overlay {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  background: linear-gradient(
+    to bottom,
+    rgba(18, 50, 72, 0.55) 0%,
+    rgba(18, 50, 72, 0.35) 60%,
+    rgba(18, 50, 72, 0.7) 100%
+  );
+}
+.slidev-layout.cover h1,
+.slidev-layout.cover h2,
+.slidev-layout.cover p {
+  color: #fff !important;
+}
+
+/* ── Quote / callout boxes ── */
+.callout {
+  border-left: 4px solid var(--pcw-primary);
+  background: var(--pcw-light);
+  padding: 1rem 1.5rem;
+  border-radius: 0 10px 10px 0;
+  margin: 1rem 0;
+  color: var(--pcw-dark);
+  font-style: italic;
+  font-size: 1.15rem;
+  font-weight: 700;
+  line-height: 1.4;
+}
+
+/* ── Placeholder image blocks ── */
+.img-placeholder {
+  border: 2px dashed #c5bff0;
+  background: var(--pcw-light-lilac);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 12px;
+  color: #8878c8;
+  font-style: italic;
+  font-size: 0.85rem;
+  padding: 1.5rem;
+  text-align: center;
+  min-height: 180px;
+}
+
+/* ── Workflow arrow chain ── */
+.workflow {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.4rem;
+  margin: 1.5rem 0;
+}
+.workflow .step {
+  background: var(--pcw-primary);
+  color: #fff;
+  padding: 0.45rem 1rem;
+  border-radius: 20px;
+  font-weight: 700;
+  font-size: 0.88rem;
+  white-space: nowrap;
+}
+.workflow .step.lilac  { background: var(--pcw-lilac); }
+.workflow .step.orange { background: var(--pcw-orange); }
+.workflow .step.salmon { background: var(--pcw-salmon); }
+.workflow .arrow {
+  color: var(--pcw-primary);
+  font-size: 1.1rem;
+  font-weight: 800;
+}
+
+/* ── Tag chips ── */
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin: 0.75rem 0;
+}
+.tag {
+  background: var(--pcw-light);
+  color: var(--pcw-primary);
+  padding: 0.2rem 0.8rem;
+  border-radius: 14px;
+  font-size: 0.8rem;
+  font-weight: 700;
+  border: 1px solid #c5bff0;
+}
+
+/* ── Stat highlight ── */
+.stat-highlight {
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: var(--pcw-primary);
+  line-height: 1;
+}
+
+/* ── Info chip / callout row ── */
+.info-chip {
+  display: flex;
+  gap: 0.75rem;
+  align-items: flex-start;
+  background: var(--pcw-light);
+  border-radius: 10px;
+  padding: 0.9rem 1.1rem;
+  font-size: 0.85rem;
+  color: var(--pcw-dark);
+  border: 1px solid #c5bff0;
+}
