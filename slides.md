@@ -14,10 +14,10 @@ info: |
   State of the Map US 2026
 ---
 
-<video class="cover-bg" :src="'/Untitled.mp4'" autoplay loop muted playsinline></video>
+<video class="cover-bg" :src="`${import.meta.env.BASE_URL}Untitled.mp4`" autoplay loop muted playsinline></video>
 <div class="cover-bg-overlay"></div>
 
-<img :src="'/sotmus-2026-logo.png'" style="position: absolute; top: 1.5rem; right: 1.5rem; height: 7.5rem; z-index: 10;" alt="State of the Map US 2026" />
+<img :src="`${import.meta.env.BASE_URL}sotmus-2026-logo.png`" style="position: absolute; top: 1.5rem; right: 1.5rem; height: 7.5rem; z-index: 10;" alt="State of the Map US 2026" />
 
 <div style="position: relative; z-index: 2;">
 
@@ -28,9 +28,9 @@ info: |
 </p>
 
 <div style="display: flex; align-items: center; gap: 2rem; border-top: 2px solid rgba(255,255,255,0.3); padding-top: 1.25rem;">
-  <img :src="'/pcw-logo.svg'" style="height: 2rem;" alt="Philly Community Wireless" />
+  <img :src="`${import.meta.env.BASE_URL}pcw-logo.svg`" style="height: 2rem;" alt="Philly Community Wireless" />
   <span style="color: rgba(255,255,255,0.35); font-size: 1.2rem;">·</span>
-  <img :src="'/TU_Primary_White.png'" style="height: 2.4rem;" alt="Temple University Libraries" />
+  <img :src="`${import.meta.env.BASE_URL}TU_Primary_White.png`" style="height: 2.4rem;" alt="Temple University Libraries" />
 </div>
 
 </div>
@@ -56,21 +56,21 @@ layout: default
 <div style="display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 1rem; align-items: start;">
 
 <figure style="margin: 0;">
-  <img :src="'/maps/broadband.png'" style="width: 100%; max-height: 43vh; object-fit: contain; border-radius: 8px; box-shadow: 0 2px 12px rgba(18,50,72,0.13);" />
+  <img :src="`${import.meta.env.BASE_URL}maps/broadband.png`" style="width: 100%; max-height: 43vh; object-fit: contain; border-radius: 8px; box-shadow: 0 2px 12px rgba(18,50,72,0.13);" />
   <figcaption style="margin-top: 0.25rem; font-size: 0.75rem; color: #555; text-align: center; line-height: 1.3;">
     <strong style="color: #5262ed;">No broadband access</strong><br/>Census block groups
   </figcaption>
 </figure>
 
 <figure style="margin: 0;">
-  <img :src="'/maps/internet.png'" style="width: 100%; max-height: 43vh; object-fit: contain; border-radius: 8px; box-shadow: 0 2px 12px rgba(18,50,72,0.13);" />
+  <img :src="`${import.meta.env.BASE_URL}maps/internet.png`" style="width: 100%; max-height: 43vh; object-fit: contain; border-radius: 8px; box-shadow: 0 2px 12px rgba(18,50,72,0.13);" />
   <figcaption style="margin-top: 0.25rem; font-size: 0.75rem; color: #555; text-align: center; line-height: 1.3;">
     <strong style="color: #ff8000;">No internet access</strong><br/>Census block groups
   </figcaption>
 </figure>
 
 <figure style="margin: 0;">
-  <img :src="'/maps/race.png'" style="width: 100%; max-height: 43vh; object-fit: contain; border-radius: 8px; box-shadow: 0 2px 12px rgba(18,50,72,0.13);" />
+  <img :src="`${import.meta.env.BASE_URL}maps/race.png`" style="width: 100%; max-height: 43vh; object-fit: contain; border-radius: 8px; box-shadow: 0 2px 12px rgba(18,50,72,0.13);" />
   <figcaption style="margin-top: 0.25rem; font-size: 0.75rem; color: #555; text-align: center; line-height: 1.3;">
     <strong style="color: #123248;">Predominant race / ethnicity</strong><br/>Census tracts
   </figcaption>
@@ -157,22 +157,22 @@ layout: default
 <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 0.5rem; align-items: end;">
 
   <figure style="margin: 0;">
-    <img :src="'/maps/IMG_6707.jpg'" style="width: 100%; height: 19vh; object-fit: cover; border-radius: 7px; box-shadow: 0 2px 12px rgba(18,50,72,0.13);" />
+    <img :src="`${import.meta.env.BASE_URL}maps/IMG_6707.jpg`" style="width: 100%; height: 19vh; object-fit: cover; border-radius: 7px; box-shadow: 0 2px 12px rgba(18,50,72,0.13);" />
     <figcaption style="margin-top: 0.25rem; font-size: 0.65rem; color: #555; text-align: center; line-height: 1.3;"><strong style="color: #E87461;">PCW</strong> · node installation</figcaption>
   </figure>
 
   <figure style="margin: 0;">
-    <img :src="'/maps/fcc_broadband.png'" style="width: 100%; height: 19vh; object-fit: contain; border-radius: 7px; box-shadow: 0 2px 12px rgba(18,50,72,0.13);" />
+    <img :src="`${import.meta.env.BASE_URL}maps/fcc_broadband.png`" style="width: 100%; height: 19vh; object-fit: contain; border-radius: 7px; box-shadow: 0 2px 12px rgba(18,50,72,0.13);" />
     <figcaption style="margin-top: 0.25rem; font-size: 0.65rem; color: #555; text-align: center; line-height: 1.3;"><strong style="color: #3B3F8C;">FCC broadband</strong> · reported coverage</figcaption>
   </figure>
 
   <figure style="margin: 0;">
-    <img :src="'/maps/mapillary_traces.png'" style="width: 100%; height: 19vh; object-fit: contain; border-radius: 7px; box-shadow: 0 2px 12px rgba(18,50,72,0.13);" />
+    <img :src="`${import.meta.env.BASE_URL}maps/mapillary_traces.png`" style="width: 100%; height: 19vh; object-fit: contain; border-radius: 7px; box-shadow: 0 2px 12px rgba(18,50,72,0.13);" />
     <figcaption style="margin-top: 0.25rem; font-size: 0.65rem; color: #555; text-align: center; line-height: 1.3;"><strong style="color: #72C96A;">Mapillary</strong> · image sequences</figcaption>
   </figure>
 
   <figure style="margin: 0;">
-    <img :src="'/maps/public_wifi.png'" style="width: 100%; height: 19vh; object-fit: contain; border-radius: 7px; box-shadow: 0 2px 12px rgba(18,50,72,0.13);" />
+    <img :src="`${import.meta.env.BASE_URL}maps/public_wifi.png`" style="width: 100%; height: 19vh; object-fit: contain; border-radius: 7px; box-shadow: 0 2px 12px rgba(18,50,72,0.13);" />
     <figcaption style="margin-top: 0.25rem; font-size: 0.65rem; color: #555; text-align: center; line-height: 1.3;"><strong style="color: #2E7D32;">Public WiFi</strong> · city facilities</figcaption>
   </figure>
 
@@ -197,7 +197,7 @@ layout: default
 
 </div>
 </div>
-<img v-click :src="'/maps/grant.jpg'" style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; border-radius: 8px; z-index: 10;" />
+<img v-click :src="`${import.meta.env.BASE_URL}maps/grant.jpg`" style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; border-radius: 8px; z-index: 10;" />
 </div>
 
 <!--
@@ -212,9 +212,9 @@ layout: default
 
 <div style="display: grid; grid-template-columns: 2fr 3fr; grid-template-rows: 3fr 2fr; gap: 0.65rem; margin-top: 0.65rem; height: 54vh; overflow: hidden;">
 
-  <img :src="'/maps/capture.jpg'" style="grid-row: 1 / 3; width: 100%; height: 100%; object-fit: cover; border-radius: 8px; box-shadow: 0 2px 14px rgba(18,50,72,0.15);" />
+  <img :src="`${import.meta.env.BASE_URL}maps/capture.jpg`" style="grid-row: 1 / 3; width: 100%; height: 100%; object-fit: cover; border-radius: 8px; box-shadow: 0 2px 14px rgba(18,50,72,0.15);" />
 
-  <img :src="'/maps/wide.png'" style="width: 100%; height: 100%; object-fit: cover; border-radius: 8px; box-shadow: 0 2px 14px rgba(18,50,72,0.15);" />
+  <img :src="`${import.meta.env.BASE_URL}maps/wide.png`" style="width: 100%; height: 100%; object-fit: cover; border-radius: 8px; box-shadow: 0 2px 14px rgba(18,50,72,0.15);" />
 
   <div style="display: flex; flex-direction: column; gap: 0.5rem; overflow: hidden;">
     <div class="callout" style="font-size: 0.95rem; line-height: 1.4; padding: 0.6rem 0.9rem;">
@@ -294,7 +294,7 @@ layout: default
 
 <div style="display: flex; flex-direction: row; gap: 2rem; margin-top: 0.4rem; align-items: flex-start;">
 
-  <img :src="'/maps/signal.gif'" style="max-height: 46vh; width: auto; border-radius: 8px; box-shadow: 0 2px 14px rgba(18,50,72,0.12); flex-shrink: 0;" />
+  <img :src="`${import.meta.env.BASE_URL}maps/signal.gif`" style="max-height: 46vh; width: auto; border-radius: 8px; box-shadow: 0 2px 14px rgba(18,50,72,0.12); flex-shrink: 0;" />
 
   <div style="display: flex; flex-direction: column; gap: 1rem; padding-top: 0.5rem; flex: 1;">
 
@@ -345,11 +345,11 @@ layout: default
 </div>
 
 <div style="position: relative; width: 100%;">
-  <img :src="'/maps/one.jpeg'"   style="width: 100%; height: auto; display: block; border-radius: 6px; box-shadow: 0 2px 10px rgba(18,50,72,0.13);" />
-  <img v-click :src="'/maps/two.jpeg'"   style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: contain; border-radius: 6px;" />
-  <img v-click :src="'/maps/three.jpeg'" style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: contain; border-radius: 6px;" />
-  <img v-click :src="'/maps/four.jpeg'"  style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: contain; border-radius: 6px;" />
-  <img v-click :src="'/maps/five.jpeg'" style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: contain; border-radius: 6px;" />
+  <img :src="`${import.meta.env.BASE_URL}maps/one.jpeg`"   style="width: 100%; height: auto; display: block; border-radius: 6px; box-shadow: 0 2px 10px rgba(18,50,72,0.13);" />
+  <img v-click :src="`${import.meta.env.BASE_URL}maps/two.jpeg`"   style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: contain; border-radius: 6px;" />
+  <img v-click :src="`${import.meta.env.BASE_URL}maps/three.jpeg`" style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: contain; border-radius: 6px;" />
+  <img v-click :src="`${import.meta.env.BASE_URL}maps/four.jpeg`"  style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: contain; border-radius: 6px;" />
+  <img v-click :src="`${import.meta.env.BASE_URL}maps/five.jpeg`" style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: contain; border-radius: 6px;" />
 </div>
 
 </div>
@@ -385,8 +385,8 @@ Even where **no node is placed**, the walk produces a documented neighborhood ba
 </div>
 
 <div style="display: grid; grid-template-columns: 1fr 1.6fr; gap: 0.5rem; height: 54vh;">
-  <img :src="'/maps/pole1.jpg'"    style="width: 100%; height: 100%; object-fit: cover; border-radius: 7px; box-shadow: 0 2px 10px rgba(18,50,72,0.13);" />
-  <img :src="'/maps/pole2.jpg'" style="width: 100%; height: 100%; object-fit: cover; border-radius: 7px; box-shadow: 0 2px 10px rgba(18,50,72,0.13);" />
+  <img :src="`${import.meta.env.BASE_URL}maps/pole1.jpg`"    style="width: 100%; height: 100%; object-fit: cover; border-radius: 7px; box-shadow: 0 2px 10px rgba(18,50,72,0.13);" />
+  <img :src="`${import.meta.env.BASE_URL}maps/pole2.jpg`" style="width: 100%; height: 100%; object-fit: cover; border-radius: 7px; box-shadow: 0 2px 10px rgba(18,50,72,0.13);" />
 </div>
 
 </div>
@@ -407,16 +407,16 @@ layout: default
 <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 0.6rem;">
 
   <figure style="margin: 0;">
-    <img :src="'/maps/old_all.png'" style="width: 100%; height: auto; border-radius: 7px; box-shadow: 0 2px 10px rgba(18,50,72,0.13);" />
+    <img :src="`${import.meta.env.BASE_URL}maps/old_all.png`" style="width: 100%; height: auto; border-radius: 7px; box-shadow: 0 2px 10px rgba(18,50,72,0.13);" />
     <figcaption style="margin-top: 0.3rem; font-size: 0.7rem; color: #888; text-align: center; line-height: 1.3;"><strong style="color: #555;">Before</strong> · sparse coverage</figcaption>
   </figure>
 
   <figure style="margin: 0;">
-    <img :src="'/maps/current_all.png'" style="width: 100%; height: auto; border-radius: 7px; box-shadow: 0 2px 10px rgba(18,50,72,0.13);" />
+    <img :src="`${import.meta.env.BASE_URL}maps/current_all.png`" style="width: 100%; height: auto; border-radius: 7px; box-shadow: 0 2px 10px rgba(18,50,72,0.13);" />
     <figcaption style="margin-top: 0.3rem; font-size: 0.7rem; color: #2E7D32; text-align: center; line-height: 1.3;"><strong style="color: #2E7D32;">After</strong> · community-mapped</figcaption>
   </figure>
 
-  <img :src="'/maps/park.png'" style="grid-column: 1 / -1; width: 100%; height: 16vh; object-fit: cover; object-position: center; border-radius: 7px; box-shadow: 0 2px 10px rgba(18,50,72,0.13);" />
+  <img :src="`${import.meta.env.BASE_URL}maps/park.png`" style="grid-column: 1 / -1; width: 100%; height: 16vh; object-fit: cover; object-position: center; border-radius: 7px; box-shadow: 0 2px 10px rgba(18,50,72,0.13);" />
 
 </div>
 <div>
@@ -435,8 +435,8 @@ Faster more reliable LoS pre-assessment.
 </div>
 </div>
 <div v-click style="position: absolute; inset: 0; display: flex; flex-direction: row; gap: 0.5rem; z-index: 10; background: #f9f7f4; border-radius: 8px; padding: 0.25rem;">
-  <img :src="'/maps/parcelas.png'" style="flex: 1.4; min-width: 0; object-fit: cover; border-radius: 6px;" />
-  <img :src="'/maps/parcelas2.jpg'" style="flex: 1; min-width: 0; object-fit: cover; border-radius: 6px;" />
+  <img :src="`${import.meta.env.BASE_URL}maps/parcelas.png`" style="flex: 1.4; min-width: 0; object-fit: cover; border-radius: 6px;" />
+  <img :src="`${import.meta.env.BASE_URL}maps/parcelas2.jpg`" style="flex: 1; min-width: 0; object-fit: cover; border-radius: 6px;" />
 </div>
 </div>
 
@@ -468,12 +468,12 @@ layout: default
 
 </div>
 
-<img :src="'/maps/lessons.jpg'" style="width: 100%; height: 54vh; object-fit: cover; border-radius: 8px; box-shadow: 0 2px 10px rgba(18,50,72,0.13);" />
+<img :src="`${import.meta.env.BASE_URL}maps/lessons.jpg`" style="width: 100%; height: 54vh; object-fit: cover; border-radius: 8px; box-shadow: 0 2px 10px rgba(18,50,72,0.13);" />
 
 </div>
 <div v-click style="position: absolute; inset: 0; display: grid; grid-template-columns: 1fr 1fr; gap: 0.5rem; z-index: 10;">
-  <img :src="'/maps/monitor.jpg'" style="width: 100%; height: 100%; object-fit: cover; border-radius: 8px;" />
-  <img :src="'/maps/purple.png'" style="width: 100%; height: 100%; object-fit: cover; border-radius: 8px;" />
+  <img :src="`${import.meta.env.BASE_URL}maps/monitor.jpg`" style="width: 100%; height: 100%; object-fit: cover; border-radius: 8px;" />
+  <img :src="`${import.meta.env.BASE_URL}maps/purple.png`" style="width: 100%; height: 100%; object-fit: cover; border-radius: 8px;" />
 </div>
 </div>
 
@@ -526,7 +526,7 @@ When residents hold the camera, they decide what's worth capturing. When they ma
 </div>
 <div>
 
-<img :src="'/maps/close.jpg'" style="width: 100%; aspect-ratio: 1 / 1; border-radius: 8px; box-shadow: 0 2px 10px rgba(18,50,72,0.13); object-fit: cover;" />
+<img :src="`${import.meta.env.BASE_URL}maps/close.jpg`" style="width: 100%; aspect-ratio: 1 / 1; border-radius: 8px; box-shadow: 0 2px 10px rgba(18,50,72,0.13); object-fit: cover;" />
 
 </div>
 </div>
@@ -540,7 +540,7 @@ layout: center
 class: text-center
 ---
 
-<img :src="'/maps/end.jpg'" style="width: 100%; height: 28vh; object-fit: cover; object-position: center 40%; border-radius: 10px; margin-bottom: 1.75rem; box-shadow: 0 2px 16px rgba(18,50,72,0.18);" />
+<img :src="`${import.meta.env.BASE_URL}maps/end.jpg`" style="width: 100%; height: 28vh; object-fit: cover; object-position: center 40%; border-radius: 10px; margin-bottom: 1.75rem; box-shadow: 0 2px 16px rgba(18,50,72,0.18);" />
 
 <div style="max-width: 680px; margin: 0 auto;">
 
@@ -551,7 +551,7 @@ class: text-center
 <div style="border-top: 2px solid #5262ed; padding-top: 1.25rem; text-align: left; display: grid; grid-template-columns: 1fr 1fr; gap: 2rem;">
 
 <div style="display: flex; flex-direction: column; gap: 0.5rem;">
-  <img :src="'/maps/pcw.png'" style="height: 4rem; object-fit: contain; object-position: left;" />
+  <img :src="`${import.meta.env.BASE_URL}maps/pcw.png`" style="height: 4rem; object-fit: contain; object-position: left;" />
   <div style="font-size: 0.82rem; color: #555; line-height: 1.7;">
     phillycommunitywireless.org<br/>
     info@phillycommunitywireless.org
@@ -559,7 +559,7 @@ class: text-center
 </div>
 
 <div style="display: flex; flex-direction: column; gap: 0.5rem;">
-  <img :src="'/maps/Libraries_Red_Black.png'" style="height: 4rem; object-fit: contain; object-position: left;" />
+  <img :src="`${import.meta.env.BASE_URL}maps/Libraries_Red_Black.png`" style="height: 4rem; object-fit: contain; object-position: left;" />
   <div style="font-size: 0.82rem; color: #555; line-height: 1.7;">
     felipe.valdez@temple.edu<br/>
     library.temple.edu/gis
